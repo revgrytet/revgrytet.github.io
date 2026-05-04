@@ -7,8 +7,6 @@
     --font-serif: "DM Serif Display", serif;
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-500: oklch(63.7% 0.237 25.331);
-    --color-amber-400: oklch(82.8% 0.189 84.429);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -241,14 +239,8 @@
   .w-5 {
     width: calc(var(--spacing) * 5);
   }
-  .w-8 {
-    width: calc(var(--spacing) * 8);
-  }
   .w-32 {
     width: calc(var(--spacing) * 32);
-  }
-  .w-48 {
-    width: calc(var(--spacing) * 48);
   }
   .w-\[20px\] {
     width: 20px;
@@ -258,18 +250,6 @@
   }
   .translate-y-0\.5 {
     --tw-translate-y: calc(var(--spacing) * 0.5);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-  .translate-y-1 {
-    --tw-translate-y: calc(var(--spacing) * 1);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-  .translate-y-3 {
-    --tw-translate-y: calc(var(--spacing) * 3);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-  .translate-y-\[2px\] {
-    --tw-translate-y: 2px;
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .translate-y-\[10px\] {
@@ -443,13 +423,6 @@
       }
     }
   }
-  .hover\:stroke-revred {
-    &:hover {
-      @media (hover: hover) {
-        stroke: var(--color-revred);
-      }
-    }
-  }
   .hover\:text-black {
     &:hover {
       @media (hover: hover) {
@@ -553,12 +526,6 @@
   .lg\:translate-y-1 {
     @media (width >= 64rem) {
       --tw-translate-y: calc(var(--spacing) * 1);
-      translate: var(--tw-translate-x) var(--tw-translate-y);
-    }
-  }
-  .lg\:translate-y-\[4px\] {
-    @media (width >= 64rem) {
-      --tw-translate-y: 4px;
       translate: var(--tw-translate-x) var(--tw-translate-y);
     }
   }
