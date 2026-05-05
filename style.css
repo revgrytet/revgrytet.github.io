@@ -187,9 +187,6 @@
   .fixed {
     position: fixed;
   }
-  .relative {
-    position: relative;
-  }
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
@@ -227,9 +224,6 @@
     width: calc(var(--spacing) * 4);
     height: calc(var(--spacing) * 4);
   }
-  .h-5 {
-    height: calc(var(--spacing) * 5);
-  }
   .h-48 {
     height: calc(var(--spacing) * 48);
   }
@@ -241,9 +235,6 @@
   }
   .w-32 {
     width: calc(var(--spacing) * 32);
-  }
-  .w-\[20px\] {
-    width: 20px;
   }
   .w-full {
     width: 100%;
@@ -280,9 +271,6 @@
   .gap-1 {
     gap: calc(var(--spacing) * 1);
   }
-  .gap-2 {
-    gap: calc(var(--spacing) * 2);
-  }
   .gap-3 {
     gap: calc(var(--spacing) * 3);
   }
@@ -300,6 +288,9 @@
   }
   .fill-lightblack {
     fill: var(--color-lightblack);
+  }
+  .fill-white {
+    fill: var(--color-white);
   }
   .stroke-2 {
     stroke-width: 2;
@@ -368,10 +359,6 @@
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));
   }
-  .text-xl {
-    font-size: var(--text-xl);
-    line-height: var(--tw-leading, var(--text-xl--line-height));
-  }
   .text-xs\/5 {
     font-size: var(--text-xs);
     line-height: calc(var(--spacing) * 5);
@@ -420,6 +407,13 @@
     &:hover {
       @media (hover: hover) {
         fill: var(--color-revred);
+      }
+    }
+  }
+  .hover\:fill-white {
+    &:hover {
+      @media (hover: hover) {
+        fill: var(--color-white);
       }
     }
   }
@@ -480,11 +474,6 @@
       width: calc(var(--spacing) * 7);
     }
   }
-  .sm\:w-\[28px\] {
-    @media (width >= 40rem) {
-      width: 28px;
-    }
-  }
   .sm\:gap-4 {
     @media (width >= 40rem) {
       gap: calc(var(--spacing) * 4);
@@ -529,9 +518,9 @@
       translate: var(--tw-translate-x) var(--tw-translate-y);
     }
   }
-  .lg\:translate-y-\[19px\] {
+  .lg\:translate-y-\[20px\] {
     @media (width >= 64rem) {
-      --tw-translate-y: 19px;
+      --tw-translate-y: 20px;
       translate: var(--tw-translate-x) var(--tw-translate-y);
     }
   }
@@ -543,11 +532,6 @@
   .lg\:grid-cols-3 {
     @media (width >= 64rem) {
       grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-  }
-  .lg\:gap-4 {
-    @media (width >= 64rem) {
-      gap: calc(var(--spacing) * 4);
     }
   }
   .lg\:gap-8 {
