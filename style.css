@@ -297,6 +297,9 @@
   .overflow-hidden {
     overflow: hidden;
   }
+  .bg-\[\#808080\] {
+    background-color: #808080;
+  }
   .bg-lightblack {
     background-color: var(--color-lightblack);
   }
