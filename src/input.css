@@ -18,3 +18,12 @@
         transform: translateY(-100%);
     }
 }
+
+/* Photo Hover Effect */
+.photo-hover {
+    transition: filter 0.3s ease;
+}
+  
+.photo-hover:hover {
+    filter: brightness(66%);
+}
