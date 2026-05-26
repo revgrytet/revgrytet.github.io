@@ -7,20 +7,6 @@
     --color-lightblack: #111;
   }
 
-
-/* Site Header */
-
-.site-header {
-    transform: translateY(0);
-    transition: all 0.2s;
-
-    &:not(.site-header--inverted).site-header--hidden {
-        transform: translateY(-100%);
-    }
-}
-
-/* Photo Hover Effect */
-
 .image-container {
     position: relative;
     display: inline-block;
