@@ -32,3 +32,7 @@
   .image-container:hover .overlay {
     opacity: 1;
   }
+
+  /* .shades {
+    background-image: url('assets/images/adam-shades.jpg');
+  } */

@@ -228,27 +228,6 @@
   .hidden {
     display: none;
   }
-  .aspect-3\/2 {
-    aspect-ratio: 3/2;
-  }
-  .aspect-4\/1 {
-    aspect-ratio: 4/1;
-  }
-  .aspect-4\/2 {
-    aspect-ratio: 4/2;
-  }
-  .aspect-5\/2 {
-    aspect-ratio: 5/2;
-  }
-  .aspect-6\/1 {
-    aspect-ratio: 6/1;
-  }
-  .aspect-6\/2 {
-    aspect-ratio: 6/2;
-  }
-  .aspect-8\/1 {
-    aspect-ratio: 8/1;
-  }
   .aspect-square {
     aspect-ratio: 1 / 1;
   }
@@ -323,6 +302,15 @@
   .bg-white {
     background-color: var(--color-white);
   }
+  .bg-\[url\(\'assets\/images\/adam-shades\.jpg\'\)\] {
+    background-image: url('assets/images/adam-shades.jpg');
+  }
+  .bg-cover {
+    background-size: cover;
+  }
+  .bg-center {
+    background-position: center;
+  }
   .stroke-2 {
     stroke-width: 2;
   }
@@ -371,9 +359,6 @@
   .text-center {
     text-align: center;
   }
-  .text-justify {
-    text-align: justify;
-  }
   .font-sans {
     font-family: var(--font-sans);
   }
@@ -387,6 +372,10 @@
   .text-\[60px\]\/12 {
     font-size: 60px;
     line-height: calc(var(--spacing) * 12);
+  }
+  .text-base {
+    font-size: var(--text-base);
+    line-height: var(--tw-leading, var(--text-base--line-height));
   }
   .text-lg {
     font-size: var(--text-lg);
@@ -544,20 +533,10 @@
       margin-top: calc(var(--spacing) * 20);
     }
   }
-  .lg\:aspect-6\/2 {
-    @media (width >= 64rem) {
-      aspect-ratio: 6/2;
-    }
-  }
   .lg\:size-6 {
     @media (width >= 64rem) {
       width: calc(var(--spacing) * 6);
       height: calc(var(--spacing) * 6);
-    }
-  }
-  .lg\:w-\[50\%\] {
-    @media (width >= 64rem) {
-      width: 50%;
     }
   }
   .lg\:translate-y-\[20px\] {
@@ -681,12 +660,6 @@
     @media (width >= 64rem) {
       font-size: var(--text-lg);
       line-height: var(--tw-leading, var(--text-lg--line-height));
-    }
-  }
-  .lg\:text-xl {
-    @media (width >= 64rem) {
-      font-size: var(--text-xl);
-      line-height: var(--tw-leading, var(--text-xl--line-height));
     }
   }
   .lg\:font-medium {
