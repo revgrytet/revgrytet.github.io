@@ -27,7 +27,7 @@
         </div>
     </a>
     <div class="flex lg:gap-8 gap-4 text-sm lg:text-base">
-        <a class="hover:underline underline-offset-3 text-black dark:hover:text-white dark:text-white" href="index.html">Home</a>
+        <a class="hover:underline underline-offset-3 text-black dark:hover:text-white dark:text-white" href="mastering.html">Mastering</a>
         <a class="font-medium hover:underline underline-offset-3 hover:text-black dark:hover:text-white dark:text-white" href="projects.html">Projects</a>
         <a class="hover:underline underline-offset-3 hover:text-black dark:hover:text-white dark:text-white" href="contact.html">Contact</a>
     </div>
@@ -244,7 +244,7 @@
             <img class="aspect-square" src="assets/covers/personal-belongings.jpg" alt="mikkelrev – Palisades">
             <span class="pointer-events-none font-sans lg:text-4xl text-xl absolute opacity-0 group-hover:opacity-100 transition-opacity duration-300 inset-0 flex items-center justify-center text-center text-white px-2">mikkelrev –<br>Palisades</span>
         </div>
-    <div class="aspect-square flex flex-col justify-center"><p class="font-serif text-center items-center lg:underline-offset-4 underline-offset-2 text-3xl lg:text-4xl">Your next release here?<br><a class="text-revred hover:underline italic" href="contact.html">Get in touch!</a></p></div>
+    <div class="aspect-square flex flex-col justify-center exclude-me order-999"><p class="font-serif text-center items-center lg:underline-offset-4 underline-offset-2 text-3xl lg:text-4xl">Your next release here?<br><a class="text-revred hover:underline italic" href="contact.html">Get in touch!</a></p></div>
 </div>
 
 
@@ -257,5 +257,17 @@
         </a>
     </div>
 </footer>
+
+<script>
+    // Select all item nodes
+    const items = document.querySelectorAll('.image-container:not(.exclude-me)');
+  
+    // Assign a random CSS order value to each element
+    items.forEach(item => {
+      const randomOrder = Math.floor(Math.random() * items.length);
+      item.style.order = randomOrder;
+    });
+  </script>
+
 </body>
 </html>

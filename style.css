@@ -210,6 +210,12 @@
   .z-50 {
     z-index: 50;
   }
+  .order-99 {
+    order: 99;
+  }
+  .order-999 {
+    order: 999;
+  }
   .col-span-full {
     grid-column: 1 / -1;
   }
